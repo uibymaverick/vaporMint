@@ -21,14 +21,18 @@ function TextareaInput(props: Props) {
         </span>
       )}
       <textarea
-        className="w-full h-20 text-base border-b rounded-none text-vapourmintWhite-100 bg-vapourmintBlack-300 hover:resize-y scrollbar scrollbar-thumb-gray-900 scrollbar-track-black border-vapourmintBlack-200 focus:border-vapourmintWhite-100 focus:outline-none "
+        className={`w-full h-20 text-base border-b rounded-none text-vapourmintWhite-100 bg-vapourmintBlack-300 hover:resize-y scrollbar scrollbar-thumb-gray-900 scrollbar-track-black ${
+          props.error
+            ? "border-vapourmintError-500"
+            : "border-vapourmintBlack-200 focus:border-vapourmintWhite-100"
+        } focus:outline-none `}
         onChange={props.onChange}
         value={props.value}
         placeholder={props.placeholder}
       />
       <div className="flex items-center justify-between w-full">
         {props.error && (
-          <span className="text-xs tracking-wider uppercase text-vapourmintError-500 ">
+          <span className="text-sm tracking-wider text-vapourmintError-500 ">
             {props.error}
           </span>
         )}

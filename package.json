@@ -1,6 +1,14 @@
 {
-  "name": "designsystem",
+  "name": "vapourMint",
+  "description": "a component library made for mintflick.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uibymaverick/vapourMint.git"
+  },
   "version": "0.1.0",
+  "files": [
+    "dist"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev ",

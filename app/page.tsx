@@ -131,7 +131,7 @@ export default function Home() {
       />
       <TextInput
         title="name"
-        error="something"
+        // error="something"
         onChange={(e) => setfirst(e.target.value)}
         value={first}
         placeholder={"type here"}
@@ -139,7 +139,7 @@ export default function Home() {
       />
       <TextareaInput
         title="NAME"
-        // error="something"
+        error="something"
         onChange={(e) => setfirst(e.target.value)}
         value={first}
         placeholder={"type here"}

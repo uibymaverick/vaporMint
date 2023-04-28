@@ -15,7 +15,7 @@ export default function CheckBox(props: Props) {
       <div
         className={`w-6 h-6  ${
           props.checked
-            ? "bg-vapourmintSuccess-500"
+            ? "bg-vapormintSuccess-500"
             : "border-white border-[2px]"
         }  rounded-lg flex items-center justify-center`}
       >

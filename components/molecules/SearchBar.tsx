@@ -15,8 +15,8 @@ function SearchBar(props: Props) {
   return (
     <div className={` flex flex-col items-center justify-start w-full`}>
       <div
-        className={`flex items-center justify-start w-full gap-3 px-6 py-4 text-vapourmintWhite-100 ${
-          props.solid && "bg-vapourmintBlack-200"
+        className={`flex items-center justify-start w-full gap-3 px-6 py-4 text-vapormintWhite-100 ${
+          props.solid && "bg-vapormintBlack-200"
         }`}
       >
         {
@@ -38,7 +38,7 @@ function SearchBar(props: Props) {
 
         <input
           className={`flex-grow text-base font-semibold tracking-wider  h-fit focus:outline-none ${
-            props.solid ? "bg-vapourmintBlack-200" : " bg-vapourmintBlack-300"
+            props.solid ? "bg-vapormintBlack-200" : " bg-vapormintBlack-300"
           }`}
           onChange={props.onChange}
           value={props.value}
@@ -64,7 +64,7 @@ function SearchBar(props: Props) {
       </div>
       <span
         style={{ height: `1px` }}
-        className={`  w-full  bg-gradient-to-r from-vapourmintBlack-300 via-vapourmintWhite-100 to-vapourmintBlack-300"`}
+        className={`  w-full  bg-gradient-to-r from-vapormintBlack-300 via-vapormintWhite-100 to-vapormintBlack-300"`}
       />
     </div>
   );

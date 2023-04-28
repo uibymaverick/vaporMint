@@ -7,10 +7,10 @@ type Props = {
 export default function Loader(props: Props) {
   return (
     <div className="w-full p-1">
-      <div className="flex items-center justify-start w-full h-2 overflow-hidden rounded-full bg-vapourmintWhite-100">
+      <div className="flex items-center justify-start w-full h-2 overflow-hidden rounded-full bg-vapormintWhite-100">
         <span
           style={{ width: `${props.progress}%` }}
-          className={`bg-vapourmintSuccess-500 h-full transition-all ease-in-out cursor-pointer  delay-150`}
+          className={`bg-vapormintSuccess-500 h-full transition-all ease-in-out cursor-pointer  delay-150`}
         ></span>
       </div>
     </div>

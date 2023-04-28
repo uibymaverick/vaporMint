@@ -23,19 +23,19 @@ function Fab(props: Props) {
         props.size === "xsmall" ? "p-2" : props.size === "small" ? "p-3" : "p-5"
       }  ${
         props.kind === "default"
-          ? "bg-vapourmintWhite-100 text-vapourmintBlack-300"
+          ? "bg-vapormintWhite-100 text-vapormintBlack-300"
           : props.kind === "mint"
-          ? "bg-vapourmintMint-300 text-vapourmintBlack-300"
+          ? "bg-vapormintMint-300 text-vapormintBlack-300"
           : props.kind === "info"
-          ? "bg-vapourmintBlue-300 text-vapourmintWhite-100"
+          ? "bg-vapormintBlue-300 text-vapormintWhite-100"
           : props.kind === "danger"
-          ? "bg-vapourmintError-500 text-vapourmintWhite-100"
+          ? "bg-vapormintError-500 text-vapormintWhite-100"
           : props.kind === "luxury"
-          ? "bg-vapourmintLuxury-300 text-vapourmintWhite-100"
+          ? "bg-vapormintLuxury-300 text-vapormintWhite-100"
           : props.kind === "warning"
-          ? "bg-vapourmintWarning-500 text-vapourmintWhite-100"
+          ? "bg-vapormintWarning-500 text-vapormintWhite-100"
           : props.kind === "success" &&
-            "bg-vapourmintSuccess-500 text-vapourmintWhite-100"
+            "bg-vapormintSuccess-500 text-vapormintWhite-100"
       }   transition-all ease-in-out  `}
     >
       <svg

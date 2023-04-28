@@ -23,20 +23,20 @@ export default function Switch(props: Props) {
       <div
         className={`h-fit  w-11 ${
           props.disabled
-            ? "border-vapourmintBlack-200"
+            ? "border-vapormintBlack-200"
             : props.kind === "default"
-            ? "border-vapourmintWhite-100"
+            ? "border-vapormintWhite-100"
             : props.kind === "mint"
-            ? "border-vapourmintMint-300"
+            ? "border-vapormintMint-300"
             : props.kind === "info"
-            ? "border-vapourmintBlue-300"
+            ? "border-vapormintBlue-300"
             : props.kind === "danger"
-            ? "border-vapourmintError-500"
+            ? "border-vapormintError-500"
             : props.kind === "luxury"
-            ? "border-vapourmintLuxury-300"
+            ? "border-vapormintLuxury-300"
             : props.kind === "warning"
-            ? "border-vapourmintWarning-500"
-            : props.kind === "success" && "border-vapourmintSuccess-500"
+            ? "border-vapormintWarning-500"
+            : props.kind === "success" && "border-vapormintSuccess-500"
         } border-[1px] p-[3px] rounded-lg flex items-center  justify-start `}
       >
         <div
@@ -44,20 +44,20 @@ export default function Switch(props: Props) {
             props.on
               ? `translate-x-5 ${
                   props.kind === "default"
-                    ? "bg-vapourmintWhite-100"
+                    ? "bg-vapormintWhite-100"
                     : props.kind === "mint"
-                    ? "bg-vapourmintMint-300"
+                    ? "bg-vapormintMint-300"
                     : props.kind === "info"
-                    ? "bg-vapourmintBlue-300"
+                    ? "bg-vapormintBlue-300"
                     : props.kind === "danger"
-                    ? "bg-vapourmintError-500"
+                    ? "bg-vapormintError-500"
                     : props.kind === "luxury"
-                    ? "bg-vapourmintLuxury-300"
+                    ? "bg-vapormintLuxury-300"
                     : props.kind === "warning"
-                    ? "bg-vapourmintWarning-500"
-                    : props.kind === "success" && "bg-vapourmintSuccess-500"
+                    ? "bg-vapormintWarning-500"
+                    : props.kind === "success" && "bg-vapormintSuccess-500"
                 }`
-              : "bg-vapourmintBlack-200"
+              : "bg-vapormintBlack-200"
           }`}
         ></div>
       </div>

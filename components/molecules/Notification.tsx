@@ -22,18 +22,18 @@ export default function Notification(props: Props) {
       <div
         className={`flex flex-col gap-0 overflow-hidden  rounded-lg ${
           props.kind === "default"
-            ? "bg-vapourmintWhite-100"
+            ? "bg-vapormintWhite-100"
             : props.kind === "mint"
-            ? "bg-vapourmintMint-300"
+            ? "bg-vapormintMint-300"
             : props.kind === "info"
-            ? "bg-vapourmintBlue-300"
+            ? "bg-vapormintBlue-300"
             : props.kind === "error"
-            ? "bg-vapourmintError-500"
+            ? "bg-vapormintError-500"
             : props.kind === "luxury"
-            ? "bg-vapourmintLuxury-300"
+            ? "bg-vapormintLuxury-300"
             : props.kind === "warning"
-            ? "bg-vapourmintWarning-500"
-            : props.kind === "success" && "bg-vapourmintSuccess-500"
+            ? "bg-vapormintWarning-500"
+            : props.kind === "success" && "bg-vapormintSuccess-500"
         }`}
       >
         <div className="flex items-start gap-3 px-4 py-3 ">
@@ -42,8 +42,8 @@ export default function Notification(props: Props) {
             <span
               className={`w-full text-lg font-bold tracking-wide ${
                 props.kind === "default"
-                  ? "text-vapourmintBlack-300"
-                  : "text-vapourmintWhite-100"
+                  ? "text-vapormintBlack-300"
+                  : "text-vapormintWhite-100"
               }`}
             >
               {props.message}
@@ -52,8 +52,8 @@ export default function Notification(props: Props) {
               <span
                 className={`w-full text-sm font-medium tracking-wide  ${
                   props.kind === "default"
-                    ? "text-vapourmintBlack-100"
-                    : "text-vapourmintWhite-100"
+                    ? "text-vapormintBlack-100"
+                    : "text-vapormintWhite-100"
                 }`}
               >
                 {props.description}
@@ -70,8 +70,8 @@ export default function Notification(props: Props) {
             stroke="currentColor"
             className={`w-6 h-6 cursor-pointer ${
               props.kind === "default"
-                ? "text-vapourmintBlack-300"
-                : "text-vapourmintWhite-100"
+                ? "text-vapormintBlack-300"
+                : "text-vapormintWhite-100"
             }`}
           >
             <path
@@ -83,7 +83,7 @@ export default function Notification(props: Props) {
         </div>{" "}
         <span
           style={{ height: `1px` }}
-          className={`  w-full  bg-gradient-to-r  from-vapourmintWhite-100 to-vapourmintBlack-300`}
+          className={`  w-full  bg-gradient-to-r  from-vapormintWhite-100 to-vapormintBlack-300`}
         />
       </div>
     </div>

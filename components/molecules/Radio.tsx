@@ -35,20 +35,20 @@ export default function Radio(props: Props) {
           <div
             className={`w-6 h-6  ${
               props.disabled
-                ? "border-vapourmintBlack-200"
+                ? "border-vapormintBlack-200"
                 : option.color === "default"
-                ? "border-vapourmintWhite-100"
+                ? "border-vapormintWhite-100"
                 : option.color === "mint"
-                ? "border-vapourmintMint-300"
+                ? "border-vapormintMint-300"
                 : option.color === "info"
-                ? "border-vapourmintBlue-300"
+                ? "border-vapormintBlue-300"
                 : option.color === "danger"
-                ? "border-vapourmintError-500"
+                ? "border-vapormintError-500"
                 : option.color === "luxury"
-                ? "border-vapourmintLuxury-300"
+                ? "border-vapormintLuxury-300"
                 : option.color === "warning"
-                ? "border-vapourmintWarning-500"
-                : option.color === "success" && "border-vapourmintSuccess-500"
+                ? "border-vapormintWarning-500"
+                : option.color === "success" && "border-vapormintSuccess-500"
             } border-[2px] rounded-lg flex items-center justify-center`}
           >
             <div
@@ -56,18 +56,18 @@ export default function Radio(props: Props) {
                 props.value === option.option ? "scale-100" : "scale-0"
               } ${
                 option.color === "default"
-                  ? "bg-vapourmintWhite-100"
+                  ? "bg-vapormintWhite-100"
                   : option.color === "mint"
-                  ? "bg-vapourmintMint-300"
+                  ? "bg-vapormintMint-300"
                   : option.color === "info"
-                  ? "bg-vapourmintBlue-300"
+                  ? "bg-vapormintBlue-300"
                   : option.color === "danger"
-                  ? "bg-vapourmintError-500"
+                  ? "bg-vapormintError-500"
                   : option.color === "luxury"
-                  ? "bg-vapourmintLuxury-300"
+                  ? "bg-vapormintLuxury-300"
                   : option.color === "warning"
-                  ? "bg-vapourmintWarning-500"
-                  : option.color === "success" && "bg-vapourmintSuccess-500"
+                  ? "bg-vapormintWarning-500"
+                  : option.color === "success" && "bg-vapormintSuccess-500"
               } transition-all ease-in-out rounded-[4px] origin-center`}
             ></div>
           </div>

@@ -21,7 +21,9 @@ function Button({ kind, type, size, handleClick, children }: buttonProps) {
     <div
       onClick={(e) => {
         animateClick();
-        handleClick(e);
+        setTimeout(() => {
+          handleClick(e);
+        }, 178 * 2);
       }}
       className={`relative w-full select-none ${
         size === "small" ? "h-[44px]" : "h-[60px]"
@@ -32,33 +34,32 @@ function Button({ kind, type, size, handleClick, children }: buttonProps) {
           <button
             className={`
           ${
-            kind === "mint" &&
-            "   bg-vapourmintMint-300 text-vapourmintBlack-300"
+            kind === "mint" && "   bg-vapormintMint-300 text-vapormintBlack-300"
           } ${
               kind === "info" &&
-              "   bg-vapourmintBlue-300 text-vapourmintWhite-100 "
+              "   bg-vapormintBlue-300 text-vapormintWhite-100 "
             }  ${
               kind === "luxury" &&
-              "   bg-vapourmintLuxury-300 text-vapourmintWhite-100 "
+              "   bg-vapormintLuxury-300 text-vapormintWhite-100 "
             }  ${
               kind === "success" &&
-              "   bg-vapourmintSuccess-500 text-vapourmintWhite-100 "
+              "   bg-vapormintSuccess-500 text-vapormintWhite-100 "
             } ${
               kind === "warning" &&
-              "   bg-vapourmintWarning-500 text-vapourmintWhite-100 "
+              "   bg-vapormintWarning-500 text-vapormintWhite-100 "
             }  ${
               kind === "danger" &&
-              "    bg-vapourmintError-500 text-vapourmintWhite-100 "
+              "    bg-vapormintError-500 text-vapormintWhite-100 "
             }  ${
               kind === "white" &&
-              "   bg-vapourmintWhite-100 text-vapourmintBlack-300 "
+              "   bg-vapormintWhite-100 text-vapormintBlack-300 "
             }  absolute shadow-md z-20 transition-all ease-in-out ${
               animation ? "-bottom-1 -right-1" : " bottom-0  right-0"
             }    text-lg font-bold  p-4 rounded-lg h-full w-full  flex justify-center items-center gap-4`}
           >
             {children}
           </button>
-          <div className="absolute z-10 w-full h-full rounded-lg -bottom-1 -right-1 bg-vapourmintWhite-100"></div>
+          <div className="absolute z-10 w-full h-full rounded-lg -bottom-1 -right-1 bg-vapormintWhite-100"></div>
         </>
       )}
       {type === "outlined" && (
@@ -67,32 +68,32 @@ function Button({ kind, type, size, handleClick, children }: buttonProps) {
             className={`border-2 
           ${
             kind === "mint" &&
-            " border-vapourmintMint-300 bg-vapourmintBlack-300 text-vapourmintMint-300"
+            " border-vapormintMint-300 bg-vapormintBlack-300 text-vapormintMint-300"
           } ${
               kind === "info" &&
-              " border-vapourmintBlue-300 bg-vapourmintBlack-300 text-vapourmintBlue-300 "
+              " border-vapormintBlue-300 bg-vapormintBlack-300 text-vapormintBlue-300 "
             }  ${
               kind === "luxury" &&
-              " border-vapourmintLuxury-300 bg-vapourmintBlack-300 text-vapourmintLuxury-300 "
+              " border-vapormintLuxury-300 bg-vapormintBlack-300 text-vapormintLuxury-300 "
             }  ${
               kind === "success" &&
-              " border-vapourmintSuccess-500 bg-vapourmintBlack-300 text-vapourmintSuccess-500 "
+              " border-vapormintSuccess-500 bg-vapormintBlack-300 text-vapormintSuccess-500 "
             } ${
               kind === "warning" &&
-              " border-vapourmintWarning-500 bg-vapourmintBlack-300 text-vapourmintWarning-500 "
+              " border-vapormintWarning-500 bg-vapormintBlack-300 text-vapormintWarning-500 "
             }  ${
               kind === "danger" &&
-              " border-vapourmintError-500 bg-vapourmintBlack-300 text-vapourmintError-500 "
+              " border-vapormintError-500 bg-vapormintBlack-300 text-vapormintError-500 "
             }  ${
               kind === "white" &&
-              " border-vapourmintWhite-100 bg-vapourmintBlack-300 text-vapourmintWhite-300 "
+              " border-vapormintWhite-100 bg-vapormintBlack-300 text-vapormintWhite-100 "
             }  absolute shadow-md z-20 transition-all ease-in-out  ${
               animation ? "-bottom-1 -right-1" : " bottom-0  right-0"
             } text-lg font-bold  p-4 rounded-lg h-full w-full  flex justify-center items-center gap-4`}
           >
             {children}
           </button>
-          <div className="absolute z-10 w-full h-full border-2 rounded-lg -bottom-1 -right-1 border-y-vapourmintWhite-100"></div>
+          <div className="absolute z-10 w-full h-full border-2 rounded-lg -bottom-1 -right-1 border-y-vapormintWhite-100"></div>
         </>
       )}
       {type === "ghost" && (
@@ -100,25 +101,24 @@ function Button({ kind, type, size, handleClick, children }: buttonProps) {
           <button
             className={` 
           ${
-            kind === "mint" && "bg-vapourmintBlack-300 text-vapourmintMint-300"
+            kind === "mint" && "bg-vapormintBlack-300 text-vapormintMint-300"
           } ${
-              kind === "info" &&
-              "bg-vapourmintBlack-300 text-vapourmintBlue-300 "
+              kind === "info" && "bg-vapormintBlack-300 text-vapormintBlue-300 "
             }  ${
               kind === "luxury" &&
-              "bg-vapourmintBlack-300 text-vapourmintLuxury-300 "
+              "bg-vapormintBlack-300 text-vapormintLuxury-300 "
             }  ${
               kind === "success" &&
-              " bg-vapourmintBlack-300 text-vapourmintSuccess-500 "
+              " bg-vapormintBlack-300 text-vapormintSuccess-500 "
             } ${
               kind === "warning" &&
-              " bg-vapourmintBlack-300 text-vapourmintWarning-500 "
+              " bg-vapormintBlack-300 text-vapormintWarning-500 "
             }  ${
               kind === "danger" &&
-              "bg-vapourmintBlack-300 text-vapourmintError-500 "
+              "bg-vapormintBlack-300 text-vapormintError-500 "
             }  ${
               kind === "white" &&
-              "bg-vapourmintBlack-300 text-vapourmintWhite-100 "
+              "bg-vapormintBlack-300 text-vapormintWhite-100 "
             }  absolute shadow-md z-20 transition-all ease-in-out  ${
               animation ? "-bottom-1 -right-1" : " bottom-0  right-0"
             } text-lg font-bold  p-4 rounded-lg h-full w-full  flex justify-center items-center gap-4`}

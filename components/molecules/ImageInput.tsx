@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useCallback, useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import Cropper from "react-easy-crop";
 import FullScreenOverlay from "./FullScreenOverlay";
 import Button from "./Button";
@@ -161,7 +161,7 @@ function ImageInput({
     [croppedAreaPixels, rotation, selectedFile]
   );
 
-  const onClose = useCallback(async () => {}, []);
+  // const onClose = useCallback(async () => {}, []);
   const handleClick = () => {
     hiddenFileInput?.current.click();
   };
@@ -186,8 +186,7 @@ function ImageInput({
             title={"Crop Image"}
             onClose={() => {
               setcropperOpen(false);
-            }}
-          >
+            }}>
             <div className="flex flex-col items-center justify-start w-full h-full max-w-lg gap-2 p-1 overflow-hidden">
               <div className="relative flex-grow w-full overflow-hidden rounded-lg">
                 <Cropper
@@ -222,8 +221,7 @@ function ImageInput({
                 handleClick={() => setcropperOpen(false)}
                 kind="success"
                 type="solid"
-                size="base"
-              >
+                size="base">
                 Done
               </Button>
             </div>
@@ -242,24 +240,21 @@ function ImageInput({
                 handleClick={handleClick}
                 kind="warning"
                 type="ghost"
-                size="small"
-              >
+                size="small">
                 Choose another photo
               </Button>
             )
           ) : (
             <div
               onClick={handleClick}
-              className="flex items-center w-full gap-2 text-base font-semibold capitalize text-vapormintWhite-100"
-            >
+              className="flex items-center w-full gap-2 text-base font-semibold capitalize text-vapormintWhite-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-6 h-6 "
-              >
+                className="w-6 h-6 ">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"

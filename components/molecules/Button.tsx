@@ -1,5 +1,5 @@
 "use client";
-import React, { Children, useEffect, useState } from "react";
+import React, { useState } from "react";
 
 type buttonProps = {
   handleClick: React.MouseEventHandler<HTMLDivElement>;
@@ -27,8 +27,7 @@ function Button({ kind, type, size, handleClick, children }: buttonProps) {
       }}
       className={`relative w-full select-none ${
         size === "small" ? "h-[44px]" : "h-[60px]"
-      }`}
-    >
+      }`}>
       {type === "solid" && (
         <>
           <button
@@ -55,8 +54,7 @@ function Button({ kind, type, size, handleClick, children }: buttonProps) {
               "   bg-vapormintWhite-100 text-vapormintBlack-300 "
             }  absolute shadow-md z-20 transition-all ease-in-out ${
               animation ? "-bottom-1 -right-1" : " bottom-0  right-0"
-            }    text-lg font-bold  p-4 rounded-lg h-full w-full  flex justify-center items-center gap-4`}
-          >
+            }    text-lg font-bold  p-4 rounded-lg h-full w-full  flex justify-center items-center gap-4`}>
             {children}
           </button>
           <div className="absolute z-10 w-full h-full rounded-lg -bottom-1 -right-1 bg-vapormintWhite-100"></div>
@@ -89,8 +87,7 @@ function Button({ kind, type, size, handleClick, children }: buttonProps) {
               " border-vapormintWhite-100 bg-vapormintBlack-300 text-vapormintWhite-100 "
             }  absolute shadow-md z-20 transition-all ease-in-out  ${
               animation ? "-bottom-1 -right-1" : " bottom-0  right-0"
-            } text-lg font-bold  p-4 rounded-lg h-full w-full  flex justify-center items-center gap-4`}
-          >
+            } text-lg font-bold  p-4 rounded-lg h-full w-full  flex justify-center items-center gap-4`}>
             {children}
           </button>
           <div className="absolute z-10 w-full h-full border-2 rounded-lg -bottom-1 -right-1 border-y-vapormintWhite-100"></div>
@@ -121,8 +118,7 @@ function Button({ kind, type, size, handleClick, children }: buttonProps) {
               "bg-vapormintBlack-300 text-vapormintWhite-100 "
             }  absolute shadow-md z-20 transition-all ease-in-out  ${
               animation ? "-bottom-1 -right-1" : " bottom-0  right-0"
-            } text-lg font-bold  p-4 rounded-lg h-full w-full  flex justify-center items-center gap-4`}
-          >
+            } text-lg font-bold  p-4 rounded-lg h-full w-full  flex justify-center items-center gap-4`}>
             {children}
           </button>
         </>

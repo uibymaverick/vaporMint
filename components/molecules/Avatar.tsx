@@ -1,8 +1,7 @@
-import Image from "next/image";
 import React from "react";
 
-type Props = {
-  src?: String;
+export interface AvatarProps {
+  src?: string;
   size: "xs" | "sm" | "md" | "lg";
   kind:
     | "default"
@@ -12,12 +11,12 @@ type Props = {
     | "luxury"
     | "warning"
     | "success";
-};
+}
 
-export default function Avatar(props: Props) {
+export default function Avatar(props: AvatarProps) {
   return (
     <div className="p-1">
-      <Image
+      <img
         className={`border-[2px] ${
           props.kind === "default"
             ? "border-vapormintWhite-100"
@@ -33,7 +32,11 @@ export default function Avatar(props: Props) {
             ? "border-vapormintWarning-500"
             : props.kind === "success" && "border-vapormintSuccess-500"
         } rounded-full`}
-        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        src={
+          props.src
+            ? props.src
+            : "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        }
         alt="userImage"
         width={
           props.size === "xs"
